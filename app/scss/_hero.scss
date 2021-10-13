@@ -1,0 +1,74 @@
+.hero {
+    background-image: url('/images/background_hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    background-color: $veryLightGray;
+
+    .container {
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__image {
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        display: inline-block;
+        background-image: url('/images/avatar.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 13.5rem;
+        min-width: 14.75rem;
+        border: 5px solid $limeGreen;
+        border-radius: 50%;
+
+        
+
+        @include breakpoint-up(large) {
+            flex: 1;
+            order: 2;
+            left: 0;
+            transform: translate(0);
+            height: 20.5rem;
+            width: 21.625;
+            position: relative;
+            background-image: url('/images/avatar.jpg');
+
+            &:hover {
+                box-shadow: 0px 3px 12px;
+                transform: scale(1.05);
+            }
+        }
+
+        @include breakpoint-up(medium) {
+            min-height: 14.5rem;
+        }
+    }
+
+    &__circle {
+        
+    }
+
+    &__text {
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
+        
+        p {
+            line-height: 1.5;
+            color: $lightBlue;
+            font-weight: bold;
+        }
+
+        a {
+            margin-right: 1rem;
+        }
+    }
+}
