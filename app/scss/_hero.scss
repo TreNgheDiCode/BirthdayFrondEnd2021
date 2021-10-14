@@ -65,6 +65,13 @@
             line-height: 1.5;
             color: $lightBlue;
             font-weight: bold;
+
+            &:hover {
+                color: $white;
+                background-color: aqua;
+                transform: scale(1.05);
+                border-radius: 5px;
+            }
         }
 
         a {

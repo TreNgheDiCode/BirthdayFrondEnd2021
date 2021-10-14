@@ -1,5 +1,8 @@
 .articles {
-    background-color: $veryLightGray;
+    background-image: url('/images/newspaper.png');    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .article {
