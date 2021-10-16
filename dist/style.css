@@ -853,7 +853,7 @@ button:hover::before, .button:hover::before {
   margin-bottom: 1rem;
 }
 
-.birthday {
+.page {
   background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/food.png);
   background-size: cover;
   cursor: crosshair;
@@ -875,9 +875,16 @@ button:hover::before, .button:hover::before {
   padding: 1.5em 0em;
   position: absolute;
   top: 0%;
-  left: 60%;
   width: 50em;
+  left: 100%;
   margin: 0 0 0 -20em;
+}
+
+@media (min-width: 40em) {
+  .birthday__title p {
+    width: 50em;
+    left: 60%;
+  }
 }
 
 .birthday__title p span {
@@ -3589,15 +3596,4 @@ body .ui_inner .ui_inner__slider .slide_inner__right .add .firework_part:nth-of-
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}
-
-body.birthday .birthday__title {
-  color: #fff;
-  font-family: "Source Sans Pro";
-  font-size: 5em;
-  font-weight: 900;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
 }

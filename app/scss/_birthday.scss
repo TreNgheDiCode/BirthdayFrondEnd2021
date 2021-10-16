@@ -1,8 +1,10 @@
-.birthday {
+.page {
   background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/food.png);
   background-size: cover;
   cursor: crosshair;
   overflow-x: hidden;
+}
+.birthday {
   &__title {
   min-width: 100%;
   min-height: 100%;
@@ -15,9 +17,14 @@
       padding: 1.5em 0em;
       position: absolute;
       top: 0%;
-      left: 60%;
       width: 50em;
+      left: 100%;
       margin: 0 0 0 -20em;
+
+      @include breakpoint-up(medium) {
+        width: 50em;
+        left: 60%
+      }
       
       span {
     
